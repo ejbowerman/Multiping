@@ -1,7 +1,7 @@
 ### This script performs nslookup and ping on all DNS names or IP addresses you list in the text file referenced in $InputFile.
 ### (One per line.) (Names or IPs can be used!) Outputs to the screen - just copy & paste the screen into Excel to work with results.
 
-$InputFile = 'C:\Users\170186\OneDrive\OneDrive - NTT Data Group\Documents\Eric Docs\Toolz\multiping\list.txt'
+$InputFile = 'list.txt'
 $addresses = get-content $InputFile
 $reader = New-Object IO.StreamReader $InputFile
     while($reader.ReadLine() -ne $null){ $TotalIPs++ }
